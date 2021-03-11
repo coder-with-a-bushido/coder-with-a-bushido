@@ -51,13 +51,13 @@ Here are some ideas to get you started:
      </table>
 
 
-<h3 align="left">My Recent Article:</h3>
-<a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@coder_with_a_bushido/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@coder_with_a_bushido/0" alt="Recent Article 0"> 
+<h3 align="left">You can read my articles on <a href="https://coder-with-a-bushido.medium.com">Medium</a></h3>
+
 
 
 <p align="center">
      <img src="https://github-readme-stats.vercel.app/api?username=coder-with-a-bushido&&show_icons=true&count_private=true&title_color=ffffff&icon_color=ffbf00&text_color=ffffff&bg_color=27363e" alt="linux" />
 </p>
 
-<h4 aligh = "left">You can buy me a coffee at</h4>
+<h4 aligh = "center">You can buy me a coffee at</h4>
 <a href="https://www.buymeacoffee.com/karthikeyans" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

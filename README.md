@@ -21,9 +21,9 @@ Here are some ideas to get you started:
      </div>
      <div>
           <BR>
-          <p>🌱I’m currently learning Flutter.</p>
+          <p>🌱I’m currently learning Nodejs.</p>
           <p>👯I’m looking for Internship/Freelancing Opportunities.</p>
-          <p>💬Ask me about Flutter OR Dart.</p>
+          <p>💬Ask me about Flutter Or Dart.</p>
           <p>❤️In Love with : Flutter & Dart</p>
           <p>📫How to reach me.</p>
           <a href="https://github.com/coder-with-a-bushido">
@@ -59,5 +59,8 @@ Here are some ideas to get you started:
      <img src="https://github-readme-stats.vercel.app/api?username=coder-with-a-bushido&&show_icons=true&count_private=true&title_color=ffffff&icon_color=ffbf00&text_color=ffffff&bg_color=27363e" alt="linux" />
 </p>
 
+<!--
 <h4 aligh = "center">You can buy me a coffee at</h4>
-<a href="https://www.buymeacoffee.com/karthikeyans" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/karthikeyans" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> 
+-->
+

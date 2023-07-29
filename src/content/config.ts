@@ -5,4 +5,8 @@ const blog = defineCollection({
   schema: blogSchema,
 });
 
-export const collections = { blog };
+const story = defineCollection({
+  schema: blogSchema,
+});
+
+export const collections = { blog, story };

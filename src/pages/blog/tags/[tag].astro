@@ -6,7 +6,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Card from "@components/Card";
 import getUniqueTags from "@utils/getUniqueTags";
-import getPostsByTag from "@utils/getPostsByTag";
+import getBlogPostsByTag from "@utils/getBlogPostsByTag";
 import slugify from "@utils/slugify";
 import { SITE } from "@config";
 
@@ -32,7 +32,7 @@ const { tag } = Astro.props;
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const tagPosts = getPostsByTag(posts, tag);
+const tagPosts = getBlogPostsByTag(posts, tag);
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
@@ -51,3 +51,4 @@ const tagPosts = getPostsByTag(posts, tag);
   </Main>
   <Footer />
 </Layout>
+@utils/getBlogPostsByTag

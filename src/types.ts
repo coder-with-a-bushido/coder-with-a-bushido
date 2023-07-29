@@ -1,3 +1,8 @@
+export enum PostType {
+  blog = "blog",
+  story = "story",
+}
+
 export type Site = {
   website: string;
   author: string;

@@ -1,8 +1,9 @@
 ---
 import Breadcrumbs from "@components/Breadcrumbs.astro";
+import type { Component } from "react";
 
 export interface Props {
-  pageTitle: string;
+  pageTitle: string | Component;
   pageDesc?: string;
 }
 
@@ -11,7 +12,9 @@ const { pageTitle, pageDesc } = Astro.props;
 
 <Breadcrumbs />
 <main id="main-content">
-  <h1>{pageTitle}</h1>
+  <h1>
+    {pageTitle}
+  </h1>
   <p>{pageDesc}</p>
   <slot />
 </main>

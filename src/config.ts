@@ -21,38 +21,32 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:karthikeyanssvk@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
   },
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/coder-with-a-bushido",
     linkTitle: ` ${SITE.title} on Github`,
-    active: true,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.linkedin.com/in/karthikeyanssvk",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitter.com/_KarthikeyanS_",
     linkTitle: `${SITE.title} on Twitter`,
-    active: false,
   },
   {
     name: "Discord",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://discordapp.com/users/184554489041125376",
     linkTitle: `${SITE.title} on Discord`,
-    active: false,
   },
   {
     name: "Reddit",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.reddit.com/user/Psychological_Ad6500",
     linkTitle: `${SITE.title} on Reddit`,
-    active: false,
   },
 ];

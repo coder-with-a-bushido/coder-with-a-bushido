@@ -8,6 +8,7 @@ import Layout from "./Layout.astro";
 export interface Props {
   frontmatter: {
     title: string;
+    image: string;
     description?: string;
   };
 }
@@ -21,8 +22,147 @@ const { frontmatter } = Astro.props;
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+
+      <div id="Awesome" class="anim750">
+        <div class="reveal circle_wrapper">
+          <div class="circle">
+            <img class="rounded" src={frontmatter.image} alt="Karthikeyan S" />
+          </div>
+        </div>
+
+        <div class="anim750 sticky">
+          <div class="front circle_wrapper anim750">
+            <div class="circle anim750"></div>
+          </div>
+        </div>
+
+        <div class="anim750 sticky">
+          <div class="back circle_wrapper anim750">
+            <div class="circle anim750"></div>
+          </div>
+        </div>
+      </div>
+
       <slot />
     </section>
   </main>
   <Footer />
 </Layout>
+
+<style>
+  img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+  }
+
+  .anim750 {
+    transition: all 750ms ease-in-out;
+  }
+
+  #Awesome {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+
+    backface-visibility: hidden;
+  }
+
+  #Awesome .sticky {
+    transform: rotate(45deg);
+  }
+
+  #Awesome:hover .sticky {
+    transform: rotate(10deg);
+  }
+
+  #Awesome .sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+  }
+
+  #Awesome .reveal {
+    margin-top: -8px;
+  }
+
+  #Awesome .circle_wrapper {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+  }
+
+  #Awesome .full_circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+
+    border-radius: 999px;
+  }
+
+  #Awesome .circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+
+    border-radius: 999px;
+  }
+
+  #Awesome .back {
+    height: 10px;
+    top: 30px;
+  }
+
+  #Awesome:hover .back {
+    height: 90px;
+    top: 110px;
+  }
+
+  #Awesome .back .circle {
+    margin-top: -130px;
+    background-color: #0292e5;
+
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(251, 236, 63, 0),
+      rgba(255, 255, 255, 0.8)
+    );
+  }
+
+  #Awesome:hover .back .circle {
+    margin-top: -50px;
+  }
+
+  #Awesome .front {
+    height: 150px;
+    bottom: 0;
+    top: auto;
+
+    -webkit-box-shadow: 0 -140px 20px -140px rgba(0, 0, 0, 0.3);
+  }
+
+  #Awesome:hover .front {
+    height: 70px;
+
+    -webkit-box-shadow: 0 -60px 10px -60px rgba(0, 0, 0, 0.1);
+  }
+
+  #Awesome .front .circle {
+    margin-top: -10px;
+    background: #006cac;
+  }
+
+  #Awesome:hover .front .circle {
+    margin-top: -90px;
+    background-color: #006cac;
+    background-position: 0 100px;
+  }
+</style>

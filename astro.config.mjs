@@ -7,7 +7,13 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://coder-with-a-bushido.in/", // replace this with your deployed domain
+  site: "https://coder-with-a-bushido.in/",
+  redirects: {
+    "/meet": "https://bushi.app.100ms.live/meeting/bet-herx-yse",
+    "/book": "https://cal.com/coder-with-a-bushido",
+    "/resume":
+      "https://drive.google.com/file/d/1mRPCr5pvXpC6i0Krx2Txa_HsHwaTMjYB/view",
+  },
   integrations: [
     tailwind({
       config: {

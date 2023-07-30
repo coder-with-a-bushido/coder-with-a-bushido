@@ -31,7 +31,7 @@
 
   body {
     /* Background grid pattern */
-    @apply bg-[#e5e5f7] bg-[linear-gradient(#c8cbf8_1.1px,transparent_1.1px),linear-gradient(to_right,#c8cbf8_1.1px,#e5e5f7_1.1px)] bg-[length:22px_22px];
+    @apply bg-[linear-gradient(#e6e8fe_1.1px,transparent_1.1px),linear-gradient(to_right,#e6e8fe_1.1px,#ffffff_1.1px)] bg-[length:22px_22px];
 
     @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;

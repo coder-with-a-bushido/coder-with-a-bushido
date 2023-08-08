@@ -4,12 +4,13 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "./Layout.astro";
+import Socials from "@components/Socials.astro";
 
 export interface Props {
   frontmatter: {
     title: string;
     image: string;
-    description?: string;
+    description: string;
   };
 }
 
@@ -22,6 +23,7 @@ const { frontmatter } = Astro.props;
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+      <p class="text-m sm:text-l tracking-wider">{frontmatter.description}</p>
 
       <div id="Awesome" class="anim750">
         <div class="reveal circle_wrapper">
@@ -43,6 +45,7 @@ const { frontmatter } = Astro.props;
         </div>
       </div>
 
+      <Socials centered />
       <slot />
     </section>
   </main>

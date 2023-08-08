@@ -1,2 +1,3 @@
 - change post `featured` to `pinned`
 - change css to tailwind css in `AboutLayout.astro`
+- configure husky properly

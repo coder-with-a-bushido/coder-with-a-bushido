@@ -31,11 +31,15 @@ To create a flutter web project, you have to be in one of the following flutter 
 
 Enable support for `flutter-web` in your terminal:
 
-`$ flutter config --enable-web`
+```bash
+flutter config --enable-web
+```
 
 Now, create your flutter project like you usually do and it will have web support. If you want to add web support to an existing project you can use the following command inside the directory:
 
-`$ flutter create .`
+```bash
+flutter create .
+```
 
 ![Basic Directory Structure](/assets/blog/host-flutter-web-build/host-flutter-web-build-dir.png)
 
@@ -49,7 +53,9 @@ Now, you can also publish it on GitHub.
 
 You can make a release build for the flutter-web using the command:
 
-`$ flutter build web --release`
+```bash
+flutter build web --release
+```
 
 Now, you will have a new directory named `build` and you will find your web build in it, like this.
 

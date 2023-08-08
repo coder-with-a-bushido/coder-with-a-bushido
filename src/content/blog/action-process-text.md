@@ -24,7 +24,9 @@ If yes, then you got yourself to the right place. In this article, I'm going to 
 Let's get started.
 First, let's create our flutter project.
 
-`flutter create action_process_text_example`
+```bash
+flutter create action_process_text_example
+```
 
 Now, in the `pubspec.yaml` file, add the package
 
@@ -57,7 +59,9 @@ Now that we have completed all the setup, let's take a look at the usage.
 
 1. Import the package.
 
-`import 'package:action_process_text/action_process_text.dart';`
+```dart
+import 'package:action_process_text/action_process_text.dart';
+```
 
 2. Write an async function for starting up the plugin in the Constructor of the `StatefulWidget`, which will assign the selected text to a variable with the help of await.
 

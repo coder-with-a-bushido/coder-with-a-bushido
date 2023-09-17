@@ -23,9 +23,6 @@ export default defineConfig({
     "/resume":
       "https://drive.google.com/file/d/1mRPCr5pvXpC6i0Krx2Txa_HsHwaTMjYB/view",
   },
-  experimental: {
-    redirects: true,
-  },
   integrations: [
     tailwind({
       config: {
@@ -56,4 +53,5 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
+  output: "hybrid",
 });
